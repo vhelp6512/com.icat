@@ -1,0 +1,32 @@
+
+spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 8201
+
+spring:
+  profiles: dev
+  application:
+    name: ichong-config-client
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ #单机    
+    
+---
+server:
+  port: 8202
+
+spring:
+  profiles: test
+  application:
+    name: ichong-config-client
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ #单机   
