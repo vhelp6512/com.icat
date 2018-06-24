@@ -10,21 +10,21 @@ server:
 spring:
   profiles: dev
   application:
-    name: ichong-config-client
+    name: ichong-config-client-test
     
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/ #µ¥»ú    
     
----
+--- 
 server:
   port: 8202
 
 spring:
   profiles: test
   application:
-    name: ichong-config-client
+    name: ichong-config-client-test
     
 eureka:
   client:
