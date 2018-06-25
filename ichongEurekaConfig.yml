@@ -3,7 +3,6 @@ spring:
     active:
     - dev
 ---
-
 server:
   port: 8761
 spring:
@@ -12,10 +11,10 @@ spring:
     name: ichong-eureka-git
 eureka:
   instance:
-    hostname: eureka-server  # eurekaÊµÀıµÄÖ÷»úÃû
+    hostname: eureka-server  # eurekaå®ä¾‹çš„ä¸»æœºå
   client:
-    register-with-eureka: false #²»°Ñ×Ô¼º×¢²áµ½eurekaÉÏ
-    fetch-registry: false #false±íÊ¾×Ô¼º¶Ë¾ÍÊÇ×¢²áÖĞĞÄ£¬ÎÒµÄÖ°Ôğ¾ÍÊÇÎ¬»¤·şÎñÊµÀı£¬²¢²»ĞèÒªÈ¥¼ìË÷·şÎñ
+    register-with-eureka: false #ä¸æŠŠè‡ªå·±æ³¨å†Œåˆ°eurekaä¸Š
+    fetch-registry: false #falseè¡¨ç¤ºè‡ªå·±ç«¯å°±æ˜¯æ³¨å†Œä¸­å¿ƒï¼Œæˆ‘çš„èŒè´£å°±æ˜¯ç»´æŠ¤æœåŠ¡å®ä¾‹ï¼Œå¹¶ä¸éœ€è¦å»æ£€ç´¢æœåŠ¡
     service-url:
-       defaultZone:  http://localhost:8761/eureka/    #ÉèÖÃÓëEureka Server½»»¥µÄµØÖ·²éÑ¯·şÎñºÍ×¢²á·şÎñ¶¼ĞèÒªÒÀÀµÕâ¸öµØÖ·£¨µ¥»ú£©¡£
+       defaultZone:  http://localhost:8761/eureka/    #è®¾ç½®ä¸Eureka Serveräº¤äº’çš„åœ°å€æŸ¥è¯¢æœåŠ¡å’Œæ³¨å†ŒæœåŠ¡éƒ½éœ€è¦ä¾èµ–è¿™ä¸ªåœ°å€ï¼ˆå•æœºï¼‰ã€‚
        #defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
