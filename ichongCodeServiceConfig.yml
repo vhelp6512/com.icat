@@ -1,10 +1,10 @@
 ﻿spring:
   profiles:
     active:
-    - dev
+    - local
 ---
 spring:
-  profiles: dev
+  profiles: local
   datasource:
     username: root
     password: 123456
